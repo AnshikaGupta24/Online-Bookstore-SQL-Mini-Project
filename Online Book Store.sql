@@ -20,15 +20,6 @@ City  varchar(100),
 Country  varchar(100)
 );
 
-create table Customers (
-Customer_ID int primary key,
-Name varchar(100),
-Email  varchar(100),
-Phone int,
-City  varchar(100),
-Country  varchar(100)
-);
-
 create table Orders (
 Order_ID int primary key,
 Customer_ID int references Customers(Customer_ID),
